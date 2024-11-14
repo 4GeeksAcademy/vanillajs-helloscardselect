@@ -1,1 +1,65 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* Estilos básicos para las cartas */
+.card {
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  flex-direction: column;
+  height: 120px;
+  width: 80px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: relative;
+  .top-suit {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+  }
+  .bottom-suit {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+  }
+}
+
+.number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilos para los controles */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor de las cartas */
+#cards-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* Evita que las cartas se envuelvan a la siguiente línea */
+  margin-top: 20px;
+  margin-bottom: 30px;
+  gap: 10px; /* Espacio entre las cartas */
+}
+#registro-container {
+  /*display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* Evita que las cartas se envuelvan a la siguiente línea */
+  margin-top: 20px;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+body {
+  background-color: pink;
+}
+.registro {
+  display: flex;
+}
